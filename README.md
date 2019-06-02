@@ -1,4 +1,4 @@
 # Vezbe-JavaScript
-progres u JS
-Mini igrica: Pogodi koliko nogu ima.
+progres u JS<br>
+Mini igrica: Pogodi koliko nogu ima.<br>
 Mini igrica: Bacanje novica
