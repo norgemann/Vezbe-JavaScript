@@ -2,4 +2,4 @@
 progres u JS<br>
 Mini igrica: Pogodi koliko nogu ima.<br>
 Mini igrica: Bacanje novcica.<br>
-Mini igrica: Magic Eight Ball.
+Mini igrica: Magic Eight Ball preko switch-a.
