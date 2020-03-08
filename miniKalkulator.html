@@ -1,65 +1,56 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>JS</title>      
-        
-    </head>
-    <body>
-        
-        Prvi:<input type="text" id="broj1">
-        Drugi:<input type="text" id="broj2">
-        <br>
-        <input type="button" onClick="sabiranje()" value="Plus">
-        <input type="button" onClick="oduzimanje()" value="Minus">
-        <input type="button" onClick="mnozenje()" value="Puta">
-        <input type="button" onClick="deljenje()" value="Podeljeno">
-        <br><div id="output"></div>
-        <script>
-            
-            
-            //Mini kalkulator
-            
-            var output = document.getElementById("output");
-            var broj1 = document.getElementById("broj1");
-            var broj2 = document.getElementById("broj2");
-            
-            function sabiranje(){
-                
-                var a = Number(broj1.value);
-                var b = "+";
-                var c = Number(broj2.value);
-                var d = a+c;
-                outHTML(a,b,c,d);
-            }
-             function oduzimanje(){
-                
-                var a = Number(broj1.value);
-                var b = "-";
-                var c = Number(broj2.value);
-                var d = a-c;
-                outHTML(a,b,c,d);
-            }
-             function mnozenje(){
-                
-                var a = Number(broj1.value);
-                var b = "*";
-                var c = Number(broj2.value);
-                var d = a*c;
-                outHTML(a,b,c,d);
-            }
-             function deljenje(){
-                
-                var a = Number(broj1.value);
-                var b = "/";
-                var c = Number(broj2.value);
-                var d = a/c;
-                outHTML(a,b,c,d);
-            }
-            
-            
-            function outHTML(a,b,c,d){
-                output.innerHTML += a + " "+ b + " "+ c+ " = "+d+"<br>";
-            }
-        </script>
-    </body>
+  <head>
+    <title>JS</title>
+  </head>
+  <body>
+    Prvi:<input type="text" id="broj1" /> Drugi:<input type="text" id="broj2" />
+    <br />
+    <input type="button" onClick="sabiranje()" value="Plus" />
+    <input type="button" onClick="oduzimanje()" value="Minus" />
+    <input type="button" onClick="mnozenje()" value="Puta" />
+    <input type="button" onClick="deljenje()" value="Podeljeno" />
+    <br />
+    <div id="output"></div>
+    <script>
+      //Mini kalkulator
+
+      var output = document.getElementById("output");
+      var broj1 = document.getElementById("broj1");
+      var broj2 = document.getElementById("broj2");
+
+      function sabiranje() {
+        var a = Number(broj1.value);
+        var b = "+";
+        var c = Number(broj2.value);
+        var d = a + c;
+        outHTML(a, b, c, d);
+      }
+      function oduzimanje() {
+        var a = Number(broj1.value);
+        var b = "-";
+        var c = Number(broj2.value);
+        var d = a - c;
+        outHTML(a, b, c, d);
+      }
+      function mnozenje() {
+        var a = Number(broj1.value);
+        var b = "*";
+        var c = Number(broj2.value);
+        var d = a * c;
+        outHTML(a, b, c, d);
+      }
+      function deljenje() {
+        var a = Number(broj1.value);
+        var b = "/";
+        var c = Number(broj2.value);
+        var d = a / c;
+        outHTML(a, b, c, d);
+      }
+
+      function outHTML(a, b, c, d) {
+        output.innerHTML += a + " " + b + " " + c + " = " + d + "<br>";
+      }
+    </script>
+  </body>
 </html>
